@@ -2,6 +2,17 @@
 
 Šī ir Android lietotne, kas ļauj lietotājiem salīdzināt alkohola cenas dažādos veikalos. Lietotne izmanto Firebase autentifikāciju un veic HTTP pieprasījumus uz privāto API, lai iegūtu datus par produktiem un kategorijām.
 
+## Linki uz prezentāciju un dokumentāciju
+
+- Prezentācija:
+    ```bash
+    https://docs.google.com/presentation/d/1yxwDvqrMxUgq_3rKD-3FV5qVTxQFH-_aK4gh0Gmn5Do/edit#slide=id.g2e277a1b907_0_87
+    ```
+- Dokumentācija:
+    ```bash
+    https://docs.google.com/document/d/10V_kYWaIxQHPpxmJU34Z91HgTPrECkVcSpdCxE8Dyjw/edit#heading=h.wt7stc4qlmjv
+    ```
+
 ## Funkcionalitāte
 
 - Lietotāju autentifikācija, izmantojot Firebase (reģistrācija un pieslēgšanās).
