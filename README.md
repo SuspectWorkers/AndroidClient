@@ -12,6 +12,10 @@
     ```bash
     https://docs.google.com/document/d/10V_kYWaIxQHPpxmJU34Z91HgTPrECkVcSpdCxE8Dyjw/edit#heading=h.wt7stc4qlmjv
     ```
+- Servera repozitorijs:
+    ```bash
+    https://github.com/lapamean11/AlkoStoreServer
+    ```
 
 ## Funkcionalitāte
 
