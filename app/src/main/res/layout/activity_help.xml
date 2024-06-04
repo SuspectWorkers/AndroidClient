@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="10dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:padding="16dp"
+        android:src="@drawable/ic_backbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Palīdzība"
+        android:textSize="32sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kā pievienot preces izlasei?"
+                android:textSize="22sp"
+                android:textColor="#691124"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lai pievienotu preces izlasei, noklikšķiniet uz sirds ikonas blakus preces attēlam. Prece automātiski tiks pievienota Jūsu izlasei."
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kāpēc es neredzu atlaides preces sākumlapā?"
+                android:textSize="22sp"
+                android:textColor="#691124"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lūdzu, pārliecinieties, ka Jums ir stabils interneta savienojums un mēģiniet atsvaidzināt lapu. Ja problēma saglabājas, lūdzu, uzrakstiet mums uz epastu."
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vai varu izdzēst preces no izlases?"
+                android:textSize="22sp"
+                android:textColor="#691124"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jā, lai izdzēstu preces no izlases, dodieties uz savu izlasi un noklikšķiniet uz sirds ikonas blakus precei, kuru vēlaties izdzēst."
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kā es varu atrast konkrētu alkohola veidu?"
+                android:textSize="22sp"
+                android:textColor="#691124"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lai atrastu konkrētu alkohola veidu, izmantojiet meklēšanas funkciju lapas augšpusē un ievadiet meklējamo dzēriena nosaukumu vai kategoriju."
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vai varu atstāt komentāru par preci?"
+                android:textSize="22sp"
+                android:textColor="#691124"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jā, zem katras preces ir sadaļa komentāriem, kur varat atstāt savu atsauksmi."
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

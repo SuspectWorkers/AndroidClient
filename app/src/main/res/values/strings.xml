@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Alko App</string>
+    <string name="button_text">Pieslēgties ar Google</string>
+    <string name="search_text">Meklēt</string>
+    <string name="kategorijas">Kategorijas</string>
+    <string name="popularas_preces">Populārākie alkoholiskie dzērieni</string>
+    <string name="radit_visu">Rādīt visu</string>
 </resources>
