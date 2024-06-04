@@ -25,6 +25,9 @@ interface ApiService {
 
     @GET("api/get/popular/products")
     fun getPopularProducts(): Call<List<Product>>
+
+    @POST("api/user/register")
+    fun postAccount(): Call<Void>
 }
 
 data class ReviewRequest(

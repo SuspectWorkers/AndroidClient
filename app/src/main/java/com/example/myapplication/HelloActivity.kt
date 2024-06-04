@@ -10,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class HelloActivity : AppCompatActivity() {
 
@@ -21,6 +24,13 @@ class HelloActivity : AppCompatActivity() {
 
         greetingText = findViewById(R.id.greetingText)
         loadUserProfile()
+
+        RetrofitClient.instance.postAccount().enqueue(object : Callback<Void> {
+            override fun onResponse(call: Call<Void>, response: Response<Void>) {
+            }
+            override fun onFailure(call: Call<Void>, t: Throwable) {
+            }
+        })
 
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, GeneralMenuActivity::class.java)
